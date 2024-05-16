@@ -1,0 +1,50 @@
+/* Estilo para o cabeçalho */
+#cabecalho {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+}
+ 
+#logotipo img {
+    max-width: 100%;
+    height: auto;
+}
+ 
+/* Estilo para o menu de navegação */
+#menu ul {
+    list-style-type: none;
+}
+ 
+#menu ul li {
+    display: inline;
+    margin-right: 20px;
+}
+ 
+#menu ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+ 
+#menu ul li a:hover {
+    color: #007bff;
+}
+ 
+/* Estilo para os botões de doação */
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+ 
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+ 
+/* Estilo para o rodapé */
+footer {
+    background-color: #343a40;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}

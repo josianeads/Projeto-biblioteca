@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de livros</title>
+    <meta name="desctiption" content="Aula de formulário em HTML5">
+    <meta name="keywords" content="aula de html, css , tags, formulários">
+ 
+</head>
+ 
+<body>
+ 
+    <h1> Cadastro de livros </h1>
+ 
+    <form action="cadastrar.php" method="post">
+ 
+    <fieldset>
+        <legend>Detalhes do livro</legend>
+ 
+    <p>
+        <label for="Título">Título*: </label>
+        <br>
+        <input type=" text" name=" Título" id="Título" required>
+     
+    </p>
+ 
+    <p>
+        <label for="Autor">Autor*: </label> 
+        <br>
+        <input type=" text" name="Autor" id="Autor" required>
+        
+    </p>
+ 
+    <p>
+        <label for="email "> E-mail Editora*: </label>
+        <br>
+        <input type="email" name=" email" id="email" placeholder="E-mail" size="" required>
+   
+ 
+    </p>
+ 
+    <p>
+        <label for="Genero"> Gênero*: </label>
+        <select name="Genero" id="Genero">
+            <option>Selecione o Gênero</option>
+            <option value="Ficção Científica">Ficção Científica</option>
+            <option value="Romance">Romance</option>
+            <option value="Mistério">Mistério</option>
+            <option value="Suspense">Suspense</option>
+            <option value="Fantasia">Fantasia</option>
+            <option value="Terror">Terror</option>
+            <option value="Poesia">Poesia</option>
+            <option value="Drama">Drama</option>
+            <option value="Não Ficção">Não Ficção</option>
+            <option value="Autobiografia">Autobiografia</option>
+            <option value="Biografia">Biografia</option>
+            <option value="Aventura">Aventura</option>
+            <option value="Comédia">Comédia</option>
+            <option value="Animação">Animação</option>
+            <option value="Thriller">Thriller</option>
+            <option value="Ação">Ação</option>
+            <option value="História">História</option>
+            <option value="Fábula">Fábula</option>
+            <option value="Ensaio">Ensaio</option>
+            <option value="Literatura Infantojuvenil">Literatura Infantojuvenil</option>
+           
+ 
+        </select>
+ 
+    </p>
+ 
+    <p>
+        <label for="descricao"> Descrição *</label>
+        <br>
+        <textarea name="descricao" id="descricao"  rows="10" cols="50"></textarea>
+ 
+    </p>
+ 
+    <p>
+        <label for="AnoP"> Ano de Publicação *</label>
+        <br>
+   
+        <input type="AnoP" name=" AnoP"   id=" AnoP" required>
+    </p>
+ 
+</fieldset>
+ 
+<fieldset>
+ 
+    <legend> Formato do Livro</legend>
+ 
+ 
+    <p>
+        Formato:
+        <br>
+        <input type="checkbox" name="Formato[]" id="FormatoCapaDura">
+        <label for="FormatoCapaDura"> Capa Dura</label>
+        <br>
+ 
+ 
+       
+ 
+        <input type="checkbox" name="Formato[]" id="FormatoCapaBrochura">
+        <label for="FormatoCapaBruchura">Capa Brochura</label>
+ 
+        <br>
+ 
+        <input type="checkbox" name="Formato[]" id="FormatoEbook">
+        <label for="FormatoEbook">E-book</label>
+ 
+ 
+    <p>
+ 
+ 
+</fieldset>
+ 
+ 
+<fieldset>
+ 
+    <legend> Idioma do Livro</legend>
+ 
+ 
+  
+    <p>
+ 
+        <input type="radio" name="genero" id="generoIngles">
+        <label for="generoIngles">Inglês</s></label>
+ 
+        <input type="radio" name="genero" id="generoPortugues">
+        <label for="generoPortugues">Português</label>
+ 
+ 
+        <input type="radio" name="genero" id="generoEspanhol">
+        <label for="generoEspanhol">Espanhol</label>
+    </p>
+ 
+ 
+</fieldset>
+ 
+<p> * <em> Campos obrigatórios</em></p>
+ 
+<input type="submit" value="Cadastrar">
+ 
+    </form>
+ 
+</body>
